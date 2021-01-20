@@ -21,9 +21,9 @@ Route::get('r1',function (){
     return redirect('r2');
 });
 
-Route::get('r2',function (){
-    return view('welcome');
-});
+Route::get('r2',[
+    \App\Http\Controllers\HomeController::class,
+    'index']);
 
 Route::get('hello/{name?}', function($name = 'everybody') {
     return 'Hello, '.$name;
