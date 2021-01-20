@@ -27,4 +27,9 @@ Route::get('r2',function (){
 
 Route::get('hello/{name?}', function($name = 'everybody') {
     return 'Hello, '.$name;
+
+});
+
+Route::get('test/artisan',function (){
+
 });
