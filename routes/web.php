@@ -33,3 +33,7 @@ Route::get('hello/{name?}', function($name = 'everybody') {
 Route::get('test/artisan',function (){
 
 });
+
+Route::get('dashboard', function() {
+    return 'dashboard';
+}]);
